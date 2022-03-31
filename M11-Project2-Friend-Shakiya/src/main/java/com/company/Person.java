@@ -2,7 +2,14 @@ package com.company;
 
 public class Person
 {
-    public Person(String name, double amountEarned, double salary) {
+    private String name;
+    private double salary;
+    private double amountEarned;
+
+    public Person(String name, double amountEarned,double salary) {
+        this.name = name;
+        this.salary = salary;
+        this.amountEarned = amountEarned;
     }
 
     public String getName() {
@@ -29,8 +36,6 @@ public class Person
         this.amountEarned = amountEarned;
     }
 
-    private String name;
-    private double salary;
-    private double amountEarned;
+
 
 }

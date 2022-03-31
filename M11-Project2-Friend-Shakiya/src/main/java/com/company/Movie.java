@@ -9,14 +9,23 @@ public class Movie
         Profit = (Budget - MoneySpent) + MoneyEarned;
         return Profit;
     }
+    // Very confused about how to pay each actor
+    // so I just calculated for 1 actor
+
     public double Payday(Actor a)
     {
-        double pay = 0;
-        for(int i = 0; i < 4; i++)
-        {
-            pay = a.getSalary() / 4;
+            double pay = a.getSalary() / 4;
 
-        }
+            a.setAmountEarned(pay + a.getAmountEarned());
+            MoneySpent  += pay;
+
+        return pay;
+    }
+    public double  Payday(PA pa1)
+    {
+        double pay = pa1.hours * pa1.getSalary();
+        pa1.setAmountEarned(pay += pay);
+        MoneySpent += pay;
         return pay;
     }
 

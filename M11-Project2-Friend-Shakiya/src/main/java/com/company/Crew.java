@@ -3,6 +3,8 @@ package com.company;
 public class Crew extends Person
 
 {
+    private String Department;
+
     public Crew (String name, double amountEarned, double salary, String Department)
     {
         super(name, amountEarned, salary);
@@ -15,7 +17,5 @@ public class Crew extends Person
     public void setDepartment(String department) {
         Department = department;
     }
-
-    private String Department;
 
 }

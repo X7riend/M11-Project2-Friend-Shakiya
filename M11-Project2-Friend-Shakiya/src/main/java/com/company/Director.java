@@ -3,6 +3,7 @@ package com.company;
 public class Director extends Crew{
 
     private double royalties;
+
     public double getRoyalties() {
         return royalties;
     }
